@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './template/Navbar';
+
 
 function App() {
   return (
-<h1>Mehmet Can Sürücü</h1>
-  );
+    <>
+      <Navbar />
+    </>
+  )
 }
 
 export default App;
