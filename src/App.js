@@ -1,8 +1,8 @@
-
+import AlbumListPage from "./APIOperationFetch/AlbumListPage";
 function App() {
   return (
 <>
-<h1>Merhaba React</h1>
+  <AlbumListPage />
 </>
   );
 }
