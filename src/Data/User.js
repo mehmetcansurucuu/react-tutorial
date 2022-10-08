@@ -1,0 +1,40 @@
+export const userData = [
+    {
+        "id": 1,
+        "name": "Deneme",
+        "surname": "Surname",
+        "email": "deneme@deneme.com",
+        "password": "cb345e66b9367ef0b836a032d187a709",
+        "phone": "05555555555",
+        "cities_id": 1,
+        "districts_id": 1,
+        "countries_id": 1,
+        "address": "TEST ADRES",
+        "vkn_tckn": "999299999999",
+        "tax_administration": "blabla VERGİ DAİRESİ",
+        "createUserId": 1,
+        "updateUserId": 1,
+        "status": 1,
+        "created_at": "2022-10-04T13:09:27.000000Z",
+        "updated_at": "2022-10-04T13:09:27.000000Z"
+    },
+    {
+        "id": 2,
+        "name": "Test",
+        "surname": "Surname",
+        "email": "test@test.com",
+        "password": "6ebe76c9fb411be97b3b0d48b791a7c9",
+        "phone": "05555555555",
+        "cities_id": 1,
+        "districts_id": 1,
+        "countries_id": 1,
+        "address": "TEST ADRES",
+        "vkn_tckn": "999299999999",
+        "tax_administration": "blabla VERGİ DAİRESİ",
+        "createUserId": 1,
+        "updateUserId": 1,
+        "status": 1,
+        "created_at": "2022-10-04T13:09:27.000000Z",
+        "updated_at": "2022-10-04T13:09:27.000000Z"
+    }
+]

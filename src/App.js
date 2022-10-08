@@ -1,9 +1,18 @@
+import { Layout } from 'antd';
+
+import Login from "./Components/Login";
+import 'antd/dist/antd.min.css';
+import './assets/style.css'
+
+const { Content } = Layout;
 
 function App() {
   return (
-<>
-<h1>Merhaba React</h1>
-</>
+<div>
+  <Layout className="layout">
+      <Login />
+  </Layout>
+</div>
   );
 }
 
