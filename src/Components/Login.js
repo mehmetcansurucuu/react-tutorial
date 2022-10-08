@@ -1,6 +1,7 @@
-import React from 'react';
+import {useRef, useState, useEffect} from "react";
 import { Space, Button, Row, Col, Checkbox, Form, Input, Avatar, Image } from 'antd';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
+
 import Slider from "./Slider"
 import 'antd/dist/antd.min.css';
 
@@ -10,6 +11,21 @@ const Login = () =>{
         console.log('Received values of form: ', values);
     };
 
+    const useRef = useRef();
+    const errRef = useRef();
+
+    const [user, setUser] = useState('');
+    const [pwd, setPwd] = useState('');
+    const [errMsg, setErrMsg] = useState('');
+    const [success, setSuccess] = useState(false);
+
+    useEffect(() =>{
+        useRef.current.focus();
+    },[])
+
+    useEffect(() =>{
+        setErrMsg('');
+    },[user, pwd])
 
     return(
     <>
