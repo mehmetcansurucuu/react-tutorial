@@ -1,5 +1,11 @@
-export const HomePage = () => (
-    <div>
-        <h1>This is the Home Page</h1>
-    </div>
-);
+import React from 'react'
+
+function HomePage() {
+  return (
+    <>
+      <h1>Anasayfa</h1>
+    </>
+  )
+}
+
+export default HomePage

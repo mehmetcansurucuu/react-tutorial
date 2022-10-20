@@ -1,24 +1,26 @@
-import {useRef, useState, useEffect, useContext} from "react";
-import { Typography, Space, Button, Row, Col, Checkbox, Form, Input, Avatar, Image } from 'antd';
+import { Button, Row, Col, Checkbox, Form, Input, Avatar} from 'antd';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 
 import 'antd/dist/antd.min.css';
 
 const Login = () =>{
 
-    const { Text, Link } = Typography;
+    const history = useNavigate();
 
-    const onFinish = async (e)=>{
-        console.log(e);
+
+    const onFinish = async (values)=>{
+        if(values.username == "dgpays@mail.com" && values.password==123){
+            history('/customers');
+        }else{
+            console.log("hata")
+        }
     };
 
 
     return(
         <>
             <Row>
-                <Col span={24}>
-                    <Text type="danger">Test Message</Text>
-                </Col>
                 <Col span={24}>
                     <Avatar style={{marginBottom:"30px"}} size={100}>NDESTEK</Avatar>
                 </Col>
